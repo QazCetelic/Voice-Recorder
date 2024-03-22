@@ -231,7 +231,7 @@ class RecordingsAdapter(
             recordingTitle.text = recording.title
             recordingDate.text = recording.timestamp.formatDate(root.context)
             recordingDuration.text = recording.duration.getFormattedDuration()
-            recordingExtension.text = recording.extension
+            recordingExtension.text = ".${recording.extension}"
             recordingSize.text = recording.size.formatSize()
 
             overflowMenuIcon.drawable.apply {
